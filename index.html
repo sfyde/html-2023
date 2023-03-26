@@ -1,25 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Strona</title>
+    <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+    <style>
+        body{
+            width: 75%;
+            margin: auto;
+        }
+        p{
+            font-style: italic !important;
+        }
+        h1{
+            text-align: center;
+            border: solid #4a9c5c 3px;
+            width: auto;
+            font-family: Roboto, sans-serif;
+        }
+        header{
+            text-align: center;
+        }
+        nav{
+    text-align: center;
+            font-family: Montserrat, sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+
+        }
+        .lin{
+            color: black;
+
+        }
+        .tekst{
+            width: 50%;
+            text-align: justify;
+            margin: auto;
+        }
+
+        .foto{
+            padding: 15px;
+            margin: auto;
+            width: fit-content;
+        }
+        .tabelka{
+
+        }
+    </style>
 </head>
-<body>
+<body style="background-image: url('/image/bg_bggenerator_com.jpg')">
 <header><h1>LAB HTML5</h1></header>
 <nav>
-        <a href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
+        <a class="lin" href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
 
-        <a href="https://sake.wszib.edu.pl/">Sake</a>
+        <a class="lin" href="https://sake.wszib.edu.pl/">Sake</a>
 </nav>
 <section>
+    <div class="tekst">
 <article>
-    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+    <p style="font-style: oblique">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
 </article>
+    </div>
+    <div class="foto">
     <article>
         <img src="https://v.wpimg.pl/eDMwMC5qSiUsFTtwGgpHMG9NbyBFGTopLBouYRlTEGZ3VWJ7BkRXc2JGe3QCQFN0fkF8cgdGSgwbOAkcBEEfKBJEfSdbGDoQPwIoHHkeEyESMjU3RxA6dH9FfXEGLlxzfQ9-cwVfDzQqVTA" alt="To jest logo wszibu"/>
     </article>
+    </div>
     <article>
-        <table>
+        <table class="tabelka">
             <tr>
                 <th>Imie</th>
                 <th>Nazwisko</th>
