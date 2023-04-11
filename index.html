@@ -6,100 +6,187 @@
     <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
     <style>
         body{
-            width: 75%;
+            width: 90%;
             margin: auto;
+            font-family: Montserrat, sans-serif;
         }
-        p{
-            font-style: italic !important;
-        }
+
         h1{
             text-align: center;
-            border: solid #4a9c5c 3px;
-            width: auto;
-            font-family: Roboto, sans-serif;
+            border: solid #4a9c5c 5px;
+            width: fit-content;
+
+            margin: auto;
+            padding: 15px;
         }
-        header{
-            text-align: center;
-        }
+
         nav{
-    text-align: center;
-            font-family: Montserrat, sans-serif;
-            font-size: 20px;
+            text-align: center;
+
+            font-size: 30px;
             text-transform: uppercase;
+            margin-top:20px;
+            word-spacing: 20px;
 
         }
         .lin{
             color: black;
 
         }
+        .lin:hover{
+
+            font-weight: 800;
+            color: #4a9c5c ;
+
+        }
         .tekst{
             width: 50%;
             text-align: justify;
             margin: auto;
+            font-style: italic;
+            font-size: 18px;
+            letter-spacing: 2px;
         }
 
         .foto{
-            padding: 15px;
             margin: auto;
-            width: fit-content;
-        }
-        .tabelka{
+            width: 80%;
+            text-align:center;
 
         }
+        .tlo_baner{
+            z-index:1;
+            position: absolute;
+        }
+
+        .banner{
+            z-index:5;
+            position: relative;
+            animation: baner 6s infinite;
+            animation-delay: 4s;
+        }
+
+        @keyframes baner{
+            0% {opacity: 100%;}
+            70% {opacity:0%;}
+        }
+
+        .przycisk{
+         text-decoration: none;
+         font-weight: 500;
+         background-color:#01defe;
+         padding: 5px;
+         border: solid #4a9c5c 2px;
+         border-radius: 5px;
+         color: black;
+        }
+         .przycisk:hover{
+         font-weight: 600;
+         border: solid #4a9c5c 5px;
+        }
+
+
+        #tabelka:not(:target){
+            display: none;
+        }
+
+        #tabelka:target{
+            display: block;
+            width:fit-content;
+            margin-top:20px;
+            margin-left:auto;
+            margin-right:auto;
+
+        }
+
+        #komentarz1{
+        visibility: hidden;
+        font-size:35px;
+        }
+
+
+
+
     </style>
 </head>
 <body style="background-image: url('/image/bg_bggenerator_com.jpg')">
-<header><h1>LAB HTML5</h1></header>
-<nav>
+    <header>
+        <h1>LAB HTML5</h1>
+    </header>
+    <nav>
         <a class="lin" href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
 
         <a class="lin" href="https://sake.wszib.edu.pl/">Sake</a>
-</nav>
-<section>
-    <div class="tekst">
-<article>
-    <p style="font-style: oblique">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
-</article>
-    </div>
-    <div class="foto">
-    <article>
-        <img src="https://v.wpimg.pl/eDMwMC5qSiUsFTtwGgpHMG9NbyBFGTopLBouYRlTEGZ3VWJ7BkRXc2JGe3QCQFN0fkF8cgdGSgwbOAkcBEEfKBJEfSdbGDoQPwIoHHkeEyESMjU3RxA6dH9FfXEGLlxzfQ9-cwVfDzQqVTA" alt="To jest logo wszibu"/>
-    </article>
-    </div>
-    <article>
-        <table class="tabelka">
-            <tr>
-                <th>Imie</th>
-                <th>Nazwisko</th>
-                <th>Plec</th>
-            </tr>
-            <tr>
-                <td>Piotr</td>
-                <td>Gornisiewicz</td>
-                <td>Facet</td>
-            </tr>
-            <tr>
-                <td>Karol</td>
-                <td>Czerwien</td>
-                <td>Facet</td>
-            </tr>
-        </table>
-    </article>
-    <aside>
-        <ul>
-            <li>
-                <a href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
-            </li>
-            <li>
-                <a href="https://sake.wszib.edu.pl/">Sake</a>
-            </li>
-        </ul>
-    </aside>
-    <footer>
-        <p><strong>Szymon Fyderek</strong></p>
-        <p>1K333PO</p>
-    </footer>
+    </nav>
 
-</section>
+    <section>
+        <div class="tekst">
+            <article>
+                <p style="font-style: oblique">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt,
+                    explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
+                    dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                    Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat,
+                    quo voluptas nulla pariatur?
+                </p>
+            </article>
+        </div>
+
+        <div class="foto">
+            <article>
+                <img  class="tlo_baner" src="/image/baner2.jpg" alt="To jest logo wszibu"/>
+                <img class="banner" src="/image/baner.jpg" alt="To jest logo wszibu"/>
+
+            </article>
+        </div>
+
+        <article style="text-align: center;">
+            <h3>Jeśli chcesz wiedzieć kto wystąpi w następnym odcinku to...</h3>
+            <a class="przycisk" href="#tabelka">Kliknij tutaj!</a>
+            <a class="przycisk" href="#komentarz1">..a jak nie, to tutaj!</a>
+
+            <table id="tabelka">
+                <tr>
+                    <th>Imie</th>
+                    <th>Nazwisko</th>
+                    <th>Plec</th>
+                </tr>
+                <tr>
+                    <td>Piotr</td>
+                    <td>Gornisiewicz</td>
+                    <td>Facet</td>
+                </tr>
+                <tr>
+                    <td>Karol</td>
+                    <td>Czerwien</td>
+                    <td>Facet</td>
+                </tr>
+            </table>
+
+            <p id="komentarz1">A może warto zaobaczyć?</p>
+        </article>
+    </section>
+
+
+        <footer>
+            <div style="width:40%; display: inline-block;">
+                <ul style="width:fit-content; margin:auto; ">
+                    <li>
+                        <a style="text-decoration: none;" href="https://suszi.wszib.edu.pl/suszi-web/login">Suszi</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none;" href="https://sake.wszib.edu.pl/">Sake</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="width:40%; display: inline-block; text-align:center">
+            <p><strong>Szymon Fyderek</strong></p>
+            <p>1K333PO</p>
+            </div>
+        </footer>
+
+
 </body>
 </html>
